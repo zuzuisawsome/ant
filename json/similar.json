@@ -1,0 +1,78 @@
+[
+    {
+        "slug": "idle-breakout",
+       "title": "Idle breakout",
+       "cat": "Idle",
+       "domain": -1,
+       "img": "idle-breakout"
+    },
+    {
+        "slug": "grindcraft",
+        "title": "GrindCraft",
+        "cat": "Idle",
+        "domain": -1,
+        "img": "grindcraft"
+    },
+    {
+       "slug": "idle-startup-tycoon",
+       "title": "Idle startup tycoon",
+       "cat": "Idle",
+       "domain": 3,
+       "img": "idle-startup-tycoon"
+   },
+   {
+       "slug": "cookie-clicker",
+       "title": "Cookie Clicker",
+       "cat": "Idle",
+       "domain": 1,
+       "img": "cookie-clicker"
+   },
+   {
+       "slug": "idle-mining-empire",
+       "title": "Idle Mining Empire",
+       "cat": "Idle",
+       "domain": 4
+   },
+   {
+       "slug": "idle-dice",
+       "title": "Idle Dice",
+       "cat": "Idle",
+       "domain": 3
+   },
+   {
+       "slug": "idle-miner",
+       "title": "Idle Miner",
+       "cat": "Idle",
+       "domain": 3
+   },
+   {
+       "slug": "stickmerge",
+       "title": "Stick Merge",
+       "cat": "Idle, Stickman",
+       "domain": 1
+   },
+   {
+       "slug": "merge-cyber-racers",
+       "title": "Merge Cyber Racers",
+       "cat": "Car, Idle",
+       "domain": 2
+   },
+   {
+       "slug": "merge-round-racers",
+       "title": "Merge Round Racers",
+       "cat": "Car, Idle",
+       "domain": 2
+   },
+   {
+       "slug": "stick-merge-halloween",
+       "title": "Stick Merge Halloween",
+       "cat": "Idle, Stickman",
+       "domain": 2
+   },
+   {
+       "slug": "merge-cakes",
+       "title": "Merge Cakes",
+       "cat": "Idle",
+       "domain": 1
+   }
+]

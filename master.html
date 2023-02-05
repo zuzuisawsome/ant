@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no" />
+		<title>Cloud Arcade | Play HTML5 Games</title>
+		<meta name="description" content="Play HTML5 Games for Free">
+						<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-comments.css" />
+		<link rel="stylesheet" type="text/css" href="css/user.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+		<!-- Font Awesome icons (free version)-->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<!-- Google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K86QX82PLM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K86QX82PLM');
+</script>	</head>
+	<body id="page-top">
+		<!-- Navigation-->
+		<nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand js-scroll-trigger" href="https://theme.cloudarcade.net/"><img src="https://theme.cloudarcade.net/images/cloudarcade-logo.png" class="site-logo" alt="site-logo"></a>
+				<div class="d-lg-none">
+					<a class="nav-link" href="https://theme.cloudarcade.net/login/"><div class="btn btn-circle b-white b-login"><i class="bi bi-person"></i></div></a>									</div>
+				<div class="navbar-collapse collapse" id="nav-menu">
+					<ul class="navbar-nav">
+						<li class="nav-item "><a class="nav-link " href="/top-players">Top Players</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Arcade</a><ul role="menu"  class="dropdown-menu"><li><a class="dropdown-item" href="/category/baby">Baby</a></li><li><a class="dropdown-item" href="/category/bejeweled">Bejeweled</a></li><li><a class="dropdown-item" href="/category/boys">Boys</a></li><li><a class="dropdown-item" href="/category/farming">Farming</a></li></ul></li><li class="nav-item "><a class="nav-link " href="/post/">Blog</a></li><li class="nav-item "><a class="nav-link " href="/page/sample-page">Sample Page</a></li>					</ul>
+					<form class="form-inline my-2 my-lg-0 search-bar" action="/index.php">
+						<div class="input-group">
+							<input type="hidden" name="viewpage" value="search" />
+							<i class="bi bi-search"></i>
+							<input type="text" class="form-control search" placeholder="Search game" name="slug" minlength="2" required />
+						</div>
+					</form>
+				</div>
+				<div class="d-none d-lg-block">
+					<a class="nav-link" href="https://theme.cloudarcade.net/login/"><div class="btn btn-circle b-white b-login"><i class="bi bi-person"></i></div></a>									</div>
+			</div>
+		</nav>		<section class="section-header">
+			<div class="container">
+				<div class="header-area">
+					<div class="masthead-title">
+						<h1>Play on your Browser</h1>
+					</div>
+					<div class="masthead-description">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla tincidunt purus et condimentum. Integer eu posuere eros. Integer imperdiet, purus vitae egestas dapibus, dolor magna dictum quam, eu viverra nibh elit ac urna. Nunc ornare libero sit amet justo vulputate tristique.</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+	<div class="category-list-global">
+		<ul class="category-list-wrapper"><a href="https://theme.cloudarcade.net/category/io/"><li class="cat-item"><span class="icon-category"><img src="images/icon/other.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">.IO</span><div class="cat-game-amount">6 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/2-player/"><li class="cat-item"><span class="icon-category"><img src="images/icon/2-player.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">2 Player</span><div class="cat-game-amount">3 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/3d/"><li class="cat-item"><span class="icon-category"><img src="images/icon/3d.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">3D</span><div class="cat-game-amount">25 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/action/"><li class="cat-item"><span class="icon-category"><img src="images/icon/actions.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Action</span><div class="cat-game-amount">22 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/adventure/"><li class="cat-item"><span class="icon-category"><img src="images/icon/adventure.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Adventure</span><div class="cat-game-amount">25 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/arcade/"><li class="cat-item"><span class="icon-category"><img src="images/icon/arcade.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Arcade</span><div class="cat-game-amount">106 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/baby/"><li class="cat-item"><span class="icon-category"><img src="images/icon/other.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Baby</span><div class="cat-game-amount">3 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/bejeweled/"><li class="cat-item"><span class="icon-category"><img src="images/icon/bejeweled.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Bejeweled</span><div class="cat-game-amount">3 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/boys/"><li class="cat-item"><span class="icon-category"><img src="images/icon/other.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Boys</span><div class="cat-game-amount">8 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/clicker/"><li class="cat-item"><span class="icon-category"><img src="images/icon/clicker.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Clicker</span><div class="cat-game-amount">12 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/farming/"><li class="cat-item"><span class="icon-category"><img src="images/icon/other.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Farming</span><div class="cat-game-amount">2 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/girls/"><li class="cat-item"><span class="icon-category"><img src="images/icon/girls.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Girls</span><div class="cat-game-amount">12 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/hypercasual/"><li class="cat-item"><span class="icon-category"><img src="images/icon/casual.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Hypercasual</span><div class="cat-game-amount">41 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/multiplayer/"><li class="cat-item"><span class="icon-category"><img src="images/icon/multiplayer.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Multiplayer</span><div class="cat-game-amount">2 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/puzzle/"><li class="cat-item"><span class="icon-category"><img src="images/icon/puzzle.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Puzzle</span><div class="cat-game-amount">100 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/racing/"><li class="cat-item"><span class="icon-category"><img src="images/icon/racing.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Racing</span><div class="cat-game-amount">2 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/shooting/"><li class="cat-item"><span class="icon-category"><img src="images/icon/other.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Shooting</span><div class="cat-game-amount">5 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/soccer/"><li class="cat-item"><span class="icon-category"><img src="images/icon/other.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Soccer</span><div class="cat-game-amount">3 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/sports/"><li class="cat-item"><span class="icon-category"><img src="images/icon/sport.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Sports</span><div class="cat-game-amount">5 games</div></div></li></a><a href="https://theme.cloudarcade.net/category/stickman/"><li class="cat-item"><span class="icon-category"><img src="images/icon/other.svg" alt="<?php echo $category_title ?>" width="40" height="40"></span><div class="cat-info"><span class="cat-name">Stickman</span><div class="cat-game-amount">5 games</div></div></li></a></ul>	</div>
+	<div class="banner-ad-wrapper"><div class="banner-ad-content" style="padding: 20px 0; text-align: center;"><img src="https://cdn.redfoc.com/img/banner-1.png" alt="banner"></div></div>	<!-- Trending section -->
+		<h3 class="section-title">Trending</h3>
+	<div class="row-list-1 grid-container">
+		<div class="list-1-wrapper">
+							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/memory-match/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/games/memory-match/memory-match-thumb_2_small.jpg" class="small-thumb img-rounded" alt="Memory Match"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/tennis/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/games/tennis/tennis-thumb_2_small.jpg" class="small-thumb img-rounded" alt="Tennis"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/skydom-reforged/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/skydom-reforged-skydom-reforged-94529c23cb094231a768b74f808d5cd0-512x512_small.webp" class="small-thumb img-rounded" alt="Skydom Reforged"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/knife-jump/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/knife-jump-knife-jump-2e17eaa71f3a4cc1a58d7a17813465f8-512x512_small.jpeg" class="small-thumb img-rounded" alt="Knife Jump"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/amogusio/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/amogusio-amogusio-1b0532236f5f4b709b6f59e3dd47690b-512x512_small.jpeg" class="small-thumb img-rounded" alt="Amogus.io"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/square-dash/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/square-dash-square-dash-ededc6fb0caa45f0be216da0a2442bd7-512x512_small.jpeg" class="small-thumb img-rounded" alt="Square dash"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/bff-long-frocks-style/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/bff-long-frocks-style-bff-long-frocks-style-e61c85ecefab44baaeabf0ae994d8c10-512x512_small.jpeg" class="small-thumb img-rounded" alt="BFF Long Frocks Style"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/unblock-cube-3d/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/unblock-cube-3d-unblock-cube-3d-b2d6554a0200418cbe03a42d6e515a80-512x512_small.webp" class="small-thumb img-rounded" alt="Unblock Cube 3D"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/zball-3-football/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/zball-3-football-zball-3-football-7d27d94fb61d400e835e10c986af8b8a-512x512_small.jpeg" class="small-thumb img-rounded" alt="zBall 3 Football"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/vikings-royal-battle/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/vikings-royal-battle-vikings-royal-battle-3655210579454a09bc2dec35567818a3-512x512_small.jpeg" class="small-thumb img-rounded" alt="Vikings Royal Battle"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/parking-harder/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/parking-harder-parking-harder-60889b07e11e44eebfadd0af28a04bbb-512x512_small.jpeg" class="small-thumb img-rounded" alt="Parking Harder"></div>
+	</div>
+	</a>
+</div>							<div class="game-item list-1">
+	<a href="https://theme.cloudarcade.net/game/parking-man/">
+	<div class="list-game">
+		<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/parking-man-parking-man-b33cdc8c171f477988520b681d0aa47f-512x512_small.jpeg" class="small-thumb img-rounded" alt="Parking Man"></div>
+	</div>
+	</a>
+</div>					</div>
+			<button type="button" class="b-left btn btn-default btn-circle btn-lg" id="t-prev">
+				<i class="bi bi-caret-left-fill"></i>
+			</button>
+			<button type="button" class="b-right btn btn-default btn-circle btn-lg" id="t-next">
+				<i class="bi bi-caret-right-fill"></i>
+			</button>
+	</div>
+		<!-- New games section -->
+	<h3 class="section-title">New games</h3>
+	<div class="row grid-container" id="new-games-section">
+					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/memory-match/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/games/memory-match/memory-match-thumb_2_small.jpg" class="small-thumb img-rounded" alt="Memory Match"></div>
+			<div class="list-info">
+				<div class="list-title">Memory Match</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/tennis/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/games/tennis/tennis-thumb_2_small.jpg" class="small-thumb img-rounded" alt="Tennis"></div>
+			<div class="list-info">
+				<div class="list-title">Tennis</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/skydom-reforged/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/skydom-reforged-skydom-reforged-94529c23cb094231a768b74f808d5cd0-512x512_small.webp" class="small-thumb img-rounded" alt="Skydom Reforged"></div>
+			<div class="list-info">
+				<div class="list-title">Skydom Reforged</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/unblock-cube-3d/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/unblock-cube-3d-unblock-cube-3d-b2d6554a0200418cbe03a42d6e515a80-512x512_small.webp" class="small-thumb img-rounded" alt="Unblock Cube 3D"></div>
+			<div class="list-info">
+				<div class="list-title">Unblock Cube 3D</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/pair-up/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/pair-up-pair-up-1dcfbb7f95d845009db9f6f5cf808642-512x512_small.webp" class="small-thumb img-rounded" alt="Pair Up"></div>
+			<div class="list-info">
+				<div class="list-title">Pair Up</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/smileyworld-match/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/smileyworld-match-smileyworld-match-930c56c9df07432f9052e80ba020085e-512x512_small.webp" class="small-thumb img-rounded" alt="SmileyWorld Match"></div>
+			<div class="list-info">
+				<div class="list-title">SmileyWorld Match</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/fill-pix/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/fill-pix-fill-pix-05a9f4d59cdd4f66a316a7dc0ff1b543-512x512_small.webp" class="small-thumb img-rounded" alt="Fill Pix"></div>
+			<div class="list-info">
+				<div class="list-title">Fill Pix</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/break-your-brain/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/break-your-brain-break-your-brain-8a006e4993134ddaa9b0179158431fae-512x512_small.webp" class="small-thumb img-rounded" alt="Break Your Brain"></div>
+			<div class="list-info">
+				<div class="list-title">Break Your Brain</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/unload-the-fridge/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/unload-the-fridge-unload-the-fridge-c33d8b9400b94da09e6ab4733131b16b-512x512_small.webp" class="small-thumb img-rounded" alt="Unload the fridge"></div>
+			<div class="list-info">
+				<div class="list-title">Unload the fridge</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/beaver-s-blocks/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/beaver-s-blocks-beaver-s-blocks-8125f11d5faa4a07a92c6df23c6143d9-512x512_small.webp" class="small-thumb img-rounded" alt="Beaver's Blocks"></div>
+			<div class="list-info">
+				<div class="list-title">Beaver's Blocks</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/infinite-heroes/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/infinite-heroes-infinite-heroes-b30cbdd7de794f779fee2875a017d159-512x512_small.webp" class="small-thumb img-rounded" alt="Infinite Heroes"></div>
+			<div class="list-info">
+				<div class="list-title">Infinite Heroes</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/dinomatch--mahjong-pairs/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/dinomatch--mahjong-pairs-dinomatch--mahjong-pairs-0d033a94592845d8bbe814039cba3e57-512x512_small.webp" class="small-thumb img-rounded" alt="DinoMatch: Mahjong Pairs"></div>
+			<div class="list-info">
+				<div class="list-title">DinoMatch: Mahjong Pairs</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/cookie-crush-christmas-2/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/cookie-crush-christmas-2-cookie-crush-christmas-2-3a9f80702dc74fa5a947e1de5e37c24b-512x512_small.webp" class="small-thumb img-rounded" alt="Cookie Crush Christmas 2"></div>
+			<div class="list-info">
+				<div class="list-title">Cookie Crush Christmas 2</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/dog-puzzle-story-2/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/dog-puzzle-story-2-dog-puzzle-story-2-9921e655b971470fbfa730f30866aae8-512x512_small.webp" class="small-thumb img-rounded" alt="Dog Puzzle Story 2"></div>
+			<div class="list-info">
+				<div class="list-title">Dog Puzzle Story 2</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/solitaire-mahjong-farm/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/solitaire-mahjong-farm-solitaire-mahjong-farm-168a0fd58cb44335b564eb7dd5ca0156-512x512_small.webp" class="small-thumb img-rounded" alt="Solitaire Mahjong Farm"></div>
+			<div class="list-info">
+				<div class="list-title">Solitaire Mahjong Farm</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/cook-and-match--sara-s-adventure/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/cook-and-match--sara-s-adventure-cook-and-match--sara-s-adventure-a853fd25dae64d8f8536b577ac08042b-512x512_small.webp" class="small-thumb img-rounded" alt="Cook and Match: Sara's Adventure"></div>
+			<div class="list-info">
+				<div class="list-title">Cook and Match: Sara's Adventure</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/bubble-shooter-pop-it-now-/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/bubble-shooter-pop-it-now--bubble-shooter-pop-it-now--0fe452befeb04e698eedb1ef88456c6b-512x512_small.webp" class="small-thumb img-rounded" alt="Bubble Shooter Pop it Now!"></div>
+			<div class="list-info">
+				<div class="list-title">Bubble Shooter Pop it Now!</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-md-2 col-sm-3 col-4 grid-1">
+	<a href="https://theme.cloudarcade.net/game/100-doors--escape-puzzle/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/100-doors--escape-puzzle-100-doors--escape-puzzle-66affc94c74d4a2d82edbb46d22b7f4b-512x512_small.webp" class="small-thumb img-rounded" alt="100 Doors: Escape Puzzle"></div>
+			<div class="list-info">
+				<div class="list-title">100 Doors: Escape Puzzle</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>			</div>
+	<div class="b-load-more text-center">
+		<button class="btn btn-load-more btn-md" id="load-more1">Load More</button>
+	</div>
+	<!-- Popular games section -->
+	<h3 class="section-title">Popular games</h3>
+	<div class="row grid-container">
+					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/tomb-of-the-mask-neon/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/tomb-of-the-mask-neon-tomb-of-the-mask-neon-1f5e4be55ab44692a86bc48d41e66ce5-512x512_small.jpeg" class="small-thumb img-rounded" alt="Tomb of the Mask Neon"></div>
+			<div class="list-info">
+				<div class="list-title">Tomb of the Mask Neon</div>
+				<div class="list-category">Adventure, Clicker</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					3.5/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/knife-jump/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/knife-jump-knife-jump-2e17eaa71f3a4cc1a58d7a17813465f8-512x512_small.jpeg" class="small-thumb img-rounded" alt="Knife Jump"></div>
+			<div class="list-info">
+				<div class="list-title">Knife Jump</div>
+				<div class="list-category">Hypercasual</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					3.6/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/parking-man/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/parking-man-parking-man-b33cdc8c171f477988520b681d0aa47f-512x512_small.jpeg" class="small-thumb img-rounded" alt="Parking Man"></div>
+			<div class="list-info">
+				<div class="list-title">Parking Man</div>
+				<div class="list-category">.IO</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					3.5/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/squid-game-2/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/squid-game-2-squid-game-2-66f24a03669f4ead87178ef4a893a16d-512x512_small.jpeg" class="small-thumb img-rounded" alt="Squid Game 2"></div>
+			<div class="list-info">
+				<div class="list-title">Squid Game 2</div>
+				<div class="list-category">.IO</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					4.1/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/mermaids-tail-rush/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/mermaids-tail-rush-mermaids-tail-rush-b54888b2351846bfa77ad95aee969705-512x512_small.jpeg" class="small-thumb img-rounded" alt="Mermaids Tail Rush"></div>
+			<div class="list-info">
+				<div class="list-title">Mermaids Tail Rush</div>
+				<div class="list-category">3D, Boys</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					3.0/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/waterpark-slide-race/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/waterpark-slide-race-waterpark-slide-race-ae8989a5126b45d4942b181036c370ae-512x512_small.jpeg" class="small-thumb img-rounded" alt="Waterpark Slide Race"></div>
+			<div class="list-info">
+				<div class="list-title">Waterpark Slide Race</div>
+				<div class="list-category">Boys</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					4.0/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/amogusio/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/amogusio-amogusio-1b0532236f5f4b709b6f59e3dd47690b-512x512_small.jpeg" class="small-thumb img-rounded" alt="Amogus.io"></div>
+			<div class="list-info">
+				<div class="list-title">Amogus.io</div>
+				<div class="list-category">Arcade, .IO</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					5.0/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/emoji-word-puzzle/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/emoji-word-puzzle-emoji-word-puzzle-52c4640d1d2a41ccb2b35785db0eea78-512x512_small.jpeg" class="small-thumb img-rounded" alt="Emoji Word Puzzle"></div>
+			<div class="list-info">
+				<div class="list-title">Emoji Word Puzzle</div>
+				<div class="list-category">Puzzle, .IO</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					3.0/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/pinatamasters-2/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/pinatamasters-2-pinatamasters-2-89be03197b9c4b418c6a75fcc1e9141c-512x512_small.jpeg" class="small-thumb img-rounded" alt="Pinatamasters 2"></div>
+			<div class="list-info">
+				<div class="list-title">Pinatamasters 2</div>
+				<div class="list-category">Action, Clicker</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					4.2/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/hammer-flight/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/hammer-flight-hammer-flight-5584559daef64c478aeaadc9db6a33f5-512x512_small.jpeg" class="small-thumb img-rounded" alt="Hammer Flight"></div>
+			<div class="list-info">
+				<div class="list-title">Hammer Flight</div>
+				<div class="list-category">Action, Multiplayer, .IO</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					5.0/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/happy-connect/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/happy-connect-happy-connect-210803df4b8b4649ac16ecc7fa338b92-512x512_small.jpeg" class="small-thumb img-rounded" alt="Happy Connect"></div>
+			<div class="list-info">
+				<div class="list-title">Happy Connect</div>
+				<div class="list-category">Puzzle</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					5.0/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-4 col-md-6 grid-2">
+	<a href="https://theme.cloudarcade.net/game/ellie-get-ready-with-me-2/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="https://theme.cloudarcade.net/thumbs/ellie-get-ready-with-me-2-ellie-get-ready-with-me-2-c59e0b2286464ec1a6e7398af2014e6a-512x512_small.jpeg" class="small-thumb img-rounded" alt="Ellie Get Ready with Me 2"></div>
+			<div class="list-info">
+				<div class="list-title">Ellie Get Ready with Me 2</div>
+				<div class="list-category">Girls</div>
+				<div class="list-rating">
+					<i class="bi bi-star-fill"></i>
+					5.0/5
+				</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>			</div>
+	<!-- Random games section -->
+	<h3 class="section-title">You may like</h3>
+	<div class="row grid-container">
+					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/ugi-bugi/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/ugi-bugi-69659b2aa30341aa80e7dd5ec58db8cb-512x384.jpeg" alt="Ugi Bugi"></div>
+			<div class="list-info">
+				<div class="list-title">Ugi Bugi</div>
+				<span>287 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/run-run-duck/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/run-run-duck-3e32c144b55948dabee2a36c620aeb31-512x384.jpeg" alt="Run Run Duck"></div>
+			<div class="list-info">
+				<div class="list-title">Run Run Duck</div>
+				<span>346 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/doll-designer/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/doll-designer-c0b6a9f6f9b7487094fdcea8edd3ffbe-512x384.jpeg" alt="Doll Designer"></div>
+			<div class="list-info">
+				<div class="list-title">Doll Designer</div>
+				<span>309 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/santa-rescue/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/santa-rescue-495f13c8b85c42928df41a82b7d2eea2-512x384.jpeg" alt="Santa Rescue"></div>
+			<div class="list-info">
+				<div class="list-title">Santa Rescue</div>
+				<span>285 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/emoji-word-puzzle/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/emoji-word-puzzle-52c4640d1d2a41ccb2b35785db0eea78-512x384.jpeg" alt="Emoji Word Puzzle"></div>
+			<div class="list-info">
+				<div class="list-title">Emoji Word Puzzle</div>
+				<span>498 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/ellie-and-ben-christmas-preparation/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/ellie-and-ben-christmas-preparation-751b587a5ec54888a5fbd7f8215ead60-512x384.jpeg" alt="Ellie And Ben Christmas Preparation"></div>
+			<div class="list-info">
+				<div class="list-title">Ellie And Ben Christmas Preparation</div>
+				<span>303 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/random-stop/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/random-stop-8bd56ef1345c4e7bb71c389e2c574df8-512x384.jpeg" alt="Random Stop"></div>
+			<div class="list-info">
+				<div class="list-title">Random Stop</div>
+				<span>289 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/christmas-slide-puzzle/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/christmas-slide-puzzle-0816f32874354445bd3d1951b1e034e7-512x384.jpeg" alt="Christmas Slide Puzzle"></div>
+			<div class="list-info">
+				<div class="list-title">Christmas Slide Puzzle</div>
+				<span>240 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/neon-tetrix/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/neon-tetrix-5bc8865becdd4e2bb8da88f51c3f9bca-512x384.jpeg" alt="Neon Tetrix"></div>
+			<div class="list-info">
+				<div class="list-title">Neon Tetrix</div>
+				<span>259 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/queen-of-pop/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/queen-of-pop-ebb3b738a57642dfb5460938483a303c-512x384.jpeg" alt="Queen of Pop"></div>
+			<div class="list-info">
+				<div class="list-title">Queen of Pop</div>
+				<span>273 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/break-your-brain/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/break-your-brain-8a006e4993134ddaa9b0179158431fae-512x384.webp" alt="Break Your Brain"></div>
+			<div class="list-info">
+				<div class="list-title">Break Your Brain</div>
+				<span>55 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>					<div class="col-lg-2 col-md-4 col-6 grid-3">
+	<a href="https://theme.cloudarcade.net/game/fast-balls/">
+	<div class="game-item">
+		<div class="list-game">
+			<div class="list-thumbnail"><img src="/thumbs/fast-balls-4c1f38cee30d4e99ace0e8814b30c951-512x384.jpeg" alt="Fast Balls"></div>
+			<div class="list-info">
+				<div class="list-title">Fast Balls</div>
+				<span>286 plays</span>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>			</div>
+	<div class="banner-ad-wrapper"><div class="banner-ad-content" style="padding: 20px 0; text-align: center;"><img src="https://cdn.redfoc.com/img/banner-2.png" alt="banner"></div></div>	</div>
+	<div class="container">
+		<div class="border-line mt-4"></div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 mb-5 mb-lg-0">
+					<h4 class="">FOOTER 1</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla tincidunt purus et condimentum. Integer eu posuere eros. Integer imperdiet, purus vitae egestas dapibus, dolor magna dictum quam, eu viverra nibh elit ac urna. Nunc ornare libero sit amet justo vulputate tristique. Morbi placerat eleifend lectus interdum consequat.				</div>
+				<div class="col-lg-4 mb-5 mb-lg-0">
+					<h4 class="">FOOTER 2</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla tincidunt purus et condimentum. Integer eu posuere eros. Integer imperdiet, purus vitae egestas dapibus, dolor magna dictum quam, eu viverra nibh elit ac urna. Nunc ornare libero sit amet justo vulputate tristique. Morbi placerat eleifend lectus interdum consequat.				</div>
+				<div class="col-lg-4">
+					<h4 class="">FOOTER 3</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla tincidunt purus et condimentum. Integer eu posuere eros. Integer imperdiet, purus vitae egestas dapibus, dolor magna dictum quam, eu viverra nibh elit ac urna. Nunc ornare libero sit amet justo vulputate tristique. Morbi placerat eleifend lectus interdum consequat.				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="footer-copyright py-4">
+		<div class="container">
+			Cloud Arcade © 2023. All rights reserved.			<span class="dsb-panel">
+				V-1.5.3			</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://theme.cloudarcade.net/js/jquery-comments.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="https://theme.cloudarcade.net/js/stats.js"></script>
+	  </body>
+</html>
