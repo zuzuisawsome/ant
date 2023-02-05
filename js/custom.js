@@ -90,6 +90,7 @@ function loadAll(){
                 </div>`;
                
             } else {
+                if(window.location.href.indexOf("/detail/") != -1){
                 tmp = `<div class="col-lg-2 col-md-4 col-6 grid-3"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889675448259925"
                 crossorigin="anonymous"></script>
            <!-- antart list -->
@@ -100,6 +101,7 @@ function loadAll(){
            <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
            </script></div>`;
+                }
             }
             html += tmp;
             }
